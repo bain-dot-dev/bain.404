@@ -1,11 +1,9 @@
-// import Image from "next/image"
-
 import Image from "next/image";
 
-export default function Section2() {
+export default function Section1() {
   return (
-    <section className="min-h-screen flex flex-col px-12 py-24">
-      <div className="flex items-start gap-12">
+    <section className="h-1/2 flex items-center justify-center px-12 py-24">
+      <div className="flex items-start gap-12 w-full max-w-5xl">
         <div className="flex-1 space-y-8">
           <div className="flex items-center gap-4">
             <h2 className="text-4xl font-semibold text-customColors-darkGray">
@@ -62,8 +60,6 @@ export default function Section2() {
             fill
             className="object-cover"
           />
-          {/* <div className="absolute inset-4 border border-red-500"></div>
-          <div className="absolute inset-0 bg-muted"></div> */}
         </div>
       </div>
     </section>

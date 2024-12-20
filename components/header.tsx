@@ -11,7 +11,7 @@ export default function Header() {
       </div>
       <nav className="flex items-center gap-8">
         <Link
-          href="/about"
+          href="#about"
           className="text-sm hover:text-customColors-bloodRed"
         >
           <span className="text-customColors-bloodRed mr-1 font-mono">01.</span>

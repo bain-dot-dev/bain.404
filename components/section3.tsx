@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-export default function Section4() {
+export default function Section3() {
   return (
-    <section className="min-h-screen flex flex-col px-12 py-24">
+    <section className="h-1/2 flex flex-col px-12 py-24 mt-36">
       <div className="flex-1 flex flex-col items-center justify-center max-w-3xl mx-auto text-center">
         <p className="text-customColors-bloodRed text-3xl mb-4 font-mono">
           03. What&apos;s Next?

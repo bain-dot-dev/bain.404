@@ -2,10 +2,11 @@ import { Github, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Section3() {
+export default function Section2() {
   return (
-    <section className="min-h-screen flex flex-col px-12 py-24">
-      <div className="space-y-12">
+    <section className="h-1/2 flex items-center justify-center px-12 py-24">
+      <div className="w-full max-w-5xl space-y-12">
+        {/* Section Header */}
         <div className="flex items-center gap-4">
           <h2 className="text-4xl font-semibold">
             <span className="text-2xl text-customColors-bloodRed font-mono">
@@ -16,7 +17,9 @@ export default function Section3() {
           <div className="h-[1px] flex-1 bg-border"></div>
         </div>
 
+        {/* Project Content */}
         <div className="relative grid grid-cols-12 gap-4">
+          {/* Image Section */}
           <div className="col-span-7 relative">
             <div className="relative aspect-video w-full">
               <div className="absolute inset-0 bg-muted/80 z-10"></div>
@@ -29,6 +32,7 @@ export default function Section3() {
             </div>
           </div>
 
+          {/* Text Section */}
           <div className="col-span-5 flex flex-col items-end gap-4">
             <p className="text-customColors-bloodRed text-md font-mono">
               Featured Project
