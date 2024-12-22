@@ -16,7 +16,7 @@ export default function Hero() {
 
   const two = (
     <motion.h1
-      className="text-8xl text-gray-800 font-bold mb-2"
+      className="text-8xl text-customColors-darkGray font-bold mb-2"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut", delay: 1.1 }}
@@ -27,7 +27,7 @@ export default function Hero() {
 
   const three = (
     <motion.h2
-      className="text-6xl text-gray-500 font-bold mb-6"
+      className="text-6xl text-customColors-gray font-bold mb-6"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut", delay: 1.2 }}
@@ -38,7 +38,7 @@ export default function Hero() {
 
   const four = (
     <motion.p
-      className="text-2xl text-gray-600 leading-relaxed w-5/6"
+      className="text-2xl text-customColors-gray leading-relaxed w-5/6"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut", delay: 1.3 }}

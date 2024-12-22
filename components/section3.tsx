@@ -58,7 +58,7 @@ export default function Section3() {
         <motion.div variants={itemVariants}>
           <Button
             variant="outline"
-            className="border-customColors-bloodRed text-customColors-bloodRed hover:bg-customColors-bloodRed/85 hover:text-white px-8 transition-colors duration-300"
+            className="text-md h-10 border-customColors-bloodRed text-customColors-bloodRed hover:bg-customColors-bloodRed/85 hover:text-white px-8 transition-colors duration-300"
             asChild
           >
             <Link href="mailto:cruzbanhansly@gmail.com">Say Hello</Link>

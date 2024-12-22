@@ -91,7 +91,7 @@ export default function Section1() {
               ].map((tech) => (
                 <div key={tech} className="flex items-center gap-2">
                   <span className="text-customColors-bloodRed">▶</span>
-                  <span>{tech}</span>
+                  <span className="text-lg font-mono">{tech}</span>
                 </div>
               ))}
             </div>

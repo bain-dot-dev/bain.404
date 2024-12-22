@@ -97,14 +97,14 @@ export default function Section2() {
             <motion.div variants={itemVariants} className="flex gap-4">
               <Link
                 href="#"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-customColors-bloodRed transition-colors"
                 aria-label="View source code on GitHub"
               >
                 <Github className="w-5 h-5" />
               </Link>
               <Link
                 href="#"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-customColors-bloodRed transition-colors"
                 aria-label="Visit live site"
               >
                 <ExternalLink className="w-5 h-5" />

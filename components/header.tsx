@@ -35,7 +35,7 @@ export default function Header() {
           >
             <Link
               href={item.href}
-              className="text-sm hover:text-customColors-bloodRed transition-colors"
+              className="text-md text-customColors-gray hover:text-customColors-bloodRed transition-colors"
             >
               <span className="text-customColors-bloodRed mr-1 font-mono">
                 {item.number}.
@@ -51,7 +51,7 @@ export default function Header() {
         >
           <Button
             variant="outline"
-            className="border-red-500 text-customColors-bloodRed hover:bg-red-500/85 hover:text-white transition-colors"
+            className="flex items-center justify-center text-md h-10 border-customColors-bloodRed text-customColors-bloodRed hover:bg-customColors-bloodRed hover:text-white transition-colors"
           >
             Resume
           </Button>

@@ -36,7 +36,7 @@ export default function SocialsOnSide() {
       >
         <Link
           href="mailto:cruzbanhansly@gmail.com"
-          className="text-muted-foreground hover:text-customColors-bloodRed vertical-text transition-colors"
+          className="text-muted-foreground text-md hover:text-customColors-bloodRed vertical-text transition-colors"
         >
           cruzbainhansly@gmail.com
         </Link>
