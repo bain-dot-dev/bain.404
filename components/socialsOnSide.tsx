@@ -15,13 +15,13 @@ export default function SocialsOnSide() {
       >
         <Link
           href="https://github.com"
-          className="text-muted-foreground hover:text-red-500 transition-colors"
+          className="text-muted-foreground hover:text-customColors-bloodRed transition-colors"
         >
           <Github className="w-5 h-5" />
         </Link>
         <Link
           href="https://linkedin.com"
-          className="text-muted-foreground hover:text-red-500 transition-colors"
+          className="text-muted-foreground hover:text-customColors-bloodRed transition-colors"
         >
           <Linkedin className="w-5 h-5" />
         </Link>
@@ -36,7 +36,7 @@ export default function SocialsOnSide() {
       >
         <Link
           href="mailto:cruzbanhansly@gmail.com"
-          className="text-muted-foreground hover:text-red-500 vertical-text transition-colors"
+          className="text-muted-foreground hover:text-customColors-bloodRed vertical-text transition-colors"
         >
           cruzbainhansly@gmail.com
         </Link>

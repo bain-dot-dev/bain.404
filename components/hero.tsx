@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Hero() {
   const one = (
     <motion.h1
-      className="text-xl text-red-500 mb-6 ml-1 font-mono"
+      className="text-xl text-customColors-bloodRed mb-6 ml-1 font-mono"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut", delay: 1 }}
