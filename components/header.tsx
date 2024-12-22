@@ -1,43 +1,62 @@
+"use client";
+
 import Link from "next/link";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { useScrollDirection } from "@/hooks/useScrollDirection";
+
+const navItems = [
+  { href: "#about", label: "About", number: "01" },
+  { href: "#project", label: "Project", number: "02" },
+  { href: "#contact", label: "Contact", number: "03" },
+];
 
 export default function Header() {
+  const { scrollDirection } = useScrollDirection();
+
   return (
-    <header className="flex items-center justify-between px-12 py-6">
+    <motion.header
+      className={`fixed top-0 left-0 right-0 flex items-center justify-between px-12 py-6 bg-background/80 backdrop-blur-sm z-50 transition-all duration-300 ${
+        scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"
+      }`}
+    >
       <div className="flex items-center gap-2">
-        <div className="w-10 h-10 bg-muted rounded-full flex items-center justify-center">
+        <motion.div className="w-14 h-14 bg-muted rounded-full flex items-center justify-center">
           Logo
-        </div>
+        </motion.div>
       </div>
       <nav className="flex items-center gap-8">
-        <Link
-          href="#about"
-          className="text-sm hover:text-customColors-bloodRed"
+        {navItems.map((item, i) => (
+          <motion.div
+            key={item.number}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: i * 0.1 }}
+          >
+            <Link
+              href={item.href}
+              className="text-sm hover:text-red-500 transition-colors"
+            >
+              <span className="text-red-500 mr-1 font-mono">
+                {item.number}.
+              </span>
+              {item.label}
+            </Link>
+          </motion.div>
+        ))}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.3 }}
         >
-          <span className="text-customColors-bloodRed mr-1 font-mono">01.</span>
-          About
-        </Link>
-        <Link
-          href="/project"
-          className="text-sm hover:text-customColors-bloodRed"
-        >
-          <span className="text-customColors-bloodRed mr-1 font-mono">02.</span>
-          Project
-        </Link>
-        <Link
-          href="/contact"
-          className="text-sm hover:text-customColors-bloodRed"
-        >
-          <span className="text-customColors-bloodRed mr-1 font-mono">03.</span>
-          Contact
-        </Link>
-        <Button
-          variant="outline"
-          className="border-customColors-bloodRed text-customColors-bloodRed hover:bg-customColors-bloodRed/85 hover:text-white"
-        >
-          Resume
-        </Button>
+          <Button
+            variant="outline"
+            className="border-red-500 text-red-500 hover:bg-red-500/85 hover:text-white transition-colors"
+          >
+            Resume
+          </Button>
+        </motion.div>
       </nav>
-    </header>
+    </motion.header>
   );
 }

@@ -1,11 +1,50 @@
+"use client";
+
 import Image from "next/image";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 export default function Section1() {
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
+
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5 },
+    },
+  };
+
   return (
-    <section className="h-1/2 flex items-center justify-center px-12 py-24">
-      <div className="flex items-start gap-12 w-full max-w-5xl">
+    <section
+      ref={sectionRef}
+      className="h-3/4 flex items-center justify-center px-12 py-24 mb-52"
+    >
+      <motion.div
+        className="flex items-start gap-12 w-full max-w-5xl"
+        variants={containerVariants}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+      >
         <div className="flex-1 space-y-8">
-          <div className="flex items-center gap-4">
+          <motion.div
+            variants={itemVariants}
+            className="flex items-center gap-4"
+          >
             <h2 className="text-4xl font-semibold text-customColors-darkGray">
               <span className="text-2xl text-customColors-bloodRed font-mono">
                 01.
@@ -13,9 +52,12 @@ export default function Section1() {
               About me
             </h2>
             <div className="h-[1px] flex-1 bg-border"></div>
-          </div>
+          </motion.div>
 
-          <div className="space-y-6 text-customColors-gray">
+          <motion.div
+            variants={itemVariants}
+            className="space-y-6 text-customColors-gray"
+          >
             <p className="text-xl leading-relaxed">
               Hello! My name is Bain Hansly Cruz, and I enjoy solving problems
               and turning ideas into solutions. My interest in freelancing
@@ -30,9 +72,12 @@ export default function Section1() {
               believe in the power of technology to bridge gaps, simplify
               processes, and make a meaningful impact on people&apos;s lives.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="space-y-2 text-xl text-muted-foreground">
+          <motion.div
+            variants={itemVariants}
+            className="space-y-2 text-xl text-muted-foreground"
+          >
             <p>
               Here are a few technologies I&apos;ve been working with recently:
             </p>
@@ -50,18 +95,21 @@ export default function Section1() {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
 
-        <div className="relative w-80 h-80 mt-20">
+        <motion.div
+          variants={itemVariants}
+          className="relative w-80 h-80 mt-20"
+        >
           <Image
             src="/bain/Cruz, Bain Hansly.png"
-            alt="3R Shane IMS Preview"
+            alt="Bain Hansly Cruz"
             fill
             className="object-cover"
           />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
