@@ -32,10 +32,10 @@ export default function Section1() {
   return (
     <section
       ref={sectionRef}
-      className="h-3/4 flex items-center justify-center px-12 py-24 mb-52"
+      className="h-auto bg-customColors-pastelWhite flex flex-col items-center justify-center px-6 py-12 lg:px-12 lg:py-24 lg:mb-52"
     >
       <motion.div
-        className="flex items-start gap-12 w-full max-w-5xl"
+        className="flex flex-col sm:flex-row items-start gap-8 lg:gap-12 w-full max-w-4xl"
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
@@ -45,20 +45,20 @@ export default function Section1() {
             variants={itemVariants}
             className="flex items-center gap-4"
           >
-            <h2 className="text-4xl font-semibold text-customColors-darkGray">
-              <span className="text-2xl text-customColors-bloodRed font-mono">
+            <h2 className="text-3xl lg:text-4xl font-semibold text-customColors-darkGray">
+              <span className="text-xl lg:text-2xl text-customColors-bloodRed font-mono">
                 01.
               </span>{" "}
               About me
             </h2>
-            <div className="h-[1px] flex-1 bg-border"></div>
+            <div className="h-[1px] flex-1 bg-border "></div>
           </motion.div>
 
           <motion.div
             variants={itemVariants}
             className="space-y-6 text-customColors-gray"
           >
-            <p className="text-xl leading-relaxed">
+            <p className="text-lg sm:text-xl leading-relaxed">
               Hello! My name is Bain Hansly Cruz, and I enjoy solving problems
               and turning ideas into solutions. My interest in freelancing
               started in 2023 when I was reached out to develop a web-based
@@ -66,7 +66,7 @@ export default function Section1() {
               only honed my technical skills but also fueled my passion for
               creating software that meets real-world needs.
             </p>
-            <p className="text-xl leading-relaxed">
+            <p className="text-lg sm:text-xl leading-relaxed">
               My main focus these days is building accessible, inclusive
               products and digital experiences for a variety of clients. I
               believe in the power of technology to bridge gaps, simplify
@@ -76,7 +76,7 @@ export default function Section1() {
 
           <motion.div
             variants={itemVariants}
-            className="space-y-2 text-xl text-muted-foreground"
+            className="space-y-2 text-lg sm:text-xl text-muted-foreground"
           >
             <p>
               Here are a few technologies I&apos;ve been working with recently:
@@ -90,8 +90,10 @@ export default function Section1() {
                 "Zod",
               ].map((tech) => (
                 <div key={tech} className="flex items-center gap-2">
-                  <span className="text-customColors-bloodRed">▶</span>
-                  <span className="text-lg font-mono">{tech}</span>
+                  <span className="text-customColors-bloodRed text-sm lg:text-lg">
+                    ▶
+                  </span>
+                  <span className="text-sm lg:text-lg font-mono">{tech}</span>
                 </div>
               ))}
             </div>
@@ -100,13 +102,13 @@ export default function Section1() {
 
         <motion.div
           variants={itemVariants}
-          className="relative w-80 h-80 mt-20"
+          className="relative w-64 h-64 sm:w-80 sm:h-80 sm:mt-20 self-center sm:self-start"
         >
           <Image
             src="/bain/Cruz, Bain Hansly.png"
             alt="Bain Hansly Cruz"
             fill
-            className="object-cover"
+            className="object-cover rounded-lg"
           />
         </motion.div>
       </motion.div>

@@ -34,7 +34,7 @@ export default function Section2() {
   return (
     <section
       ref={sectionRef}
-      className="h-1/2 flex items-center justify-center px-12 py-24 mb-56"
+      className="h-auto bg-customColors-pastelWhite flex items-center justify-center px-4 lg:px-12 py-12 lg:py-24 mb-32 lg:mb-56"
     >
       <motion.div
         className="w-full max-w-5xl space-y-12"
@@ -42,24 +42,20 @@ export default function Section2() {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
-        {/* Section Header */}
         <motion.div variants={itemVariants} className="flex items-center gap-4">
-          <h2 className="text-4xl font-semibold">
-            <span className="text-2xl text-customColors-bloodRed font-mono">
+          <h2 className="text-2xl lg:text-4xl font-semibold">
+            <span className="text-lg lg:text-2xl text-customColors-bloodRed font-mono">
               02.
             </span>{" "}
             Project
           </h2>
-          <div className="h-[1px] flex-1 bg-border"></div>
+          <div className="h-[1px] w-[420px] bg-border"></div>
         </motion.div>
-
-        {/* Project Content */}
         <motion.div
           variants={itemVariants}
-          className="relative grid grid-cols-12 gap-4"
+          className="relative grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-4"
         >
-          {/* Image Section */}
-          <div className="col-span-7 relative">
+          <div className="col-span-1 sm:col-span-7 relative">
             <div className="relative aspect-video w-full">
               <div className="absolute inset-0 bg-muted/80 z-10"></div>
               <Image
@@ -71,30 +67,32 @@ export default function Section2() {
             </div>
           </div>
 
-          {/* Text Section */}
-          <div className="col-span-5 flex flex-col items-end gap-4">
+          <div className="col-span-1 sm:col-span-5 flex flex-col items-start sm:items-end gap-4">
             <motion.p
               variants={itemVariants}
-              className="text-customColors-bloodRed text-md font-mono"
+              className="text-customColors-bloodRed text-sm sm:text-md font-mono"
             >
               Featured Project
             </motion.p>
             <motion.h3
               variants={itemVariants}
-              className="text-4xl font-semibold"
+              className="text-2xl sm:text-4xl font-semibold"
             >
               3R Shane IMS
             </motion.h3>
             <motion.div
               variants={itemVariants}
-              className="bg-muted/20 p-6 text-right"
+              className="bg-muted/40 p-4 sm:p-6 text-left sm:text-right"
             >
-              <p className="text-lg text-muted-foreground">
+              <p className="text-sm lg:text-lg text-muted-foreground">
                 An inventory management system with point-of-sale, and purchase
                 order (procurement of goods) for rice mill businesses.
               </p>
             </motion.div>
-            <motion.div variants={itemVariants} className="flex gap-4">
+            <motion.div
+              variants={itemVariants}
+              className="flex gap-4 justify-end w-full"
+            >
               <Link
                 href="#"
                 className="text-muted-foreground hover:text-customColors-bloodRed transition-colors"

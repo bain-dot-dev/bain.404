@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import * as tailwindAnimate from "tailwindcss-animate";
 
 export default {
   darkMode: ["class"],
@@ -44,6 +45,7 @@ export default {
           bloodRed: "#B02023",
           darkGray: "#393738",
           gray: "#4E4D4D",
+          pastelWhite: "#FCFBFB",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -62,6 +64,14 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
     },
+    screens: {
+      sm: "640px", // Small devices
+      md: "768px", // Tablets
+      lg: "1024px", // Laptops
+      xl: "1280px", // Desktops
+      "2xl": "1536px", // Large screens
+    },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindAnimate],
+  // plugins: [require("tailwindcss-animate")],
 } satisfies Config;
