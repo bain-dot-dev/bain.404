@@ -31,6 +31,7 @@ export default function Section1() {
 
   return (
     <section
+    id="about"
       ref={sectionRef}
       className="h-auto bg-customColors-pastelWhite flex flex-col items-center justify-center px-6 py-12 lg:px-12 lg:py-24 lg:mb-52"
     >

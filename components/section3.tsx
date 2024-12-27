@@ -32,6 +32,7 @@ export default function Section3() {
 
   return (
     <section
+      id="contact"
       ref={sectionRef}
       className="h-auto bg-customColors-pastelWhite flex flex-col px-6 sm:px-12 py-12 sm:py-24 lg:mb-12 xl:mb-24 mb-40"
     >
