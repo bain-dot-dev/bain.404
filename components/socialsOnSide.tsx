@@ -3,10 +3,17 @@
 import { Github, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function SocialsOnSide() {
+  const [recentlyClicked, setRecentlyClicked] = useState<string | null>(null);
+
+  const handleLinkClick = (linkName: string) => {
+    setRecentlyClicked(linkName);
+  };
+
   return (
-    <div className="hidden md:block">
+    <div className="hidden lg:block">
       <motion.div
         className="fixed left-12 bottom-0 flex flex-col gap-6 items-center after:content-[''] after:w-[1px] after:h-32 after:bg-border"
         initial={{ opacity: 0, x: -20 }}
@@ -14,14 +21,28 @@ export default function SocialsOnSide() {
         transition={{ duration: 0.5, delay: 1.7 }}
       >
         <Link
-          href="https://github.com"
-          className="text-muted-foreground hover:text-customColors-bloodRed transition-all duration-300 transform hover:-translate-y-1"
+          href="https://github.com/bain-dot-dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`${
+            recentlyClicked === "github"
+              ? "text-customColors-bloodRed"
+              : "text-muted-foreground"
+          } hover:text-customColors-bloodRed transition-all duration-300 transform hover:-translate-y-1`}
+          onClick={() => handleLinkClick("github")}
         >
           <Github className="w-5 h-5" />
         </Link>
         <Link
-          href="https://linkedin.com"
-          className="text-muted-foreground hover:text-customColors-bloodRed transition-all duration-300 transform hover:-translate-y-1"
+          href="http://linkedin.com/in/bain-hansly-cruz/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`${
+            recentlyClicked === "linkedin"
+              ? "text-customColors-bloodRed"
+              : "text-muted-foreground"
+          } hover:text-customColors-bloodRed transition-all duration-300 transform hover:-translate-y-1`}
+          onClick={() => handleLinkClick("linkedin")}
         >
           <Linkedin className="w-5 h-5" />
         </Link>
@@ -34,7 +55,12 @@ export default function SocialsOnSide() {
       >
         <Link
           href="mailto:cruzbanhansly@gmail.com"
-          className="text-muted-foreground text-sm font-mono hover:text-customColors-bloodRed vertical-text transition-all duration-300 transform hover:-translate-y-1"
+          className={`${
+            recentlyClicked === "email"
+              ? "text-customColors-bloodRed"
+              : "text-muted-foreground"
+          } text-sm font-mono hover:text-customColors-bloodRed vertical-text transition-all duration-300 transform hover:-translate-y-1`}
+          onClick={() => handleLinkClick("email")}
         >
           cruzbainhansly@gmail.com
         </Link>

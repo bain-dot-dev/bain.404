@@ -1,10 +1,9 @@
 "use client";
 
-import { Github, ExternalLink } from "lucide-react";
-import Link from "next/link";
-import Image from "next/image";
-import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import { ProjectCard } from "./projectCard";
+import { projects } from "@/data/projects";
 
 export default function Section2() {
   const sectionRef = useRef(null);
@@ -52,65 +51,15 @@ export default function Section2() {
           </h2>
           <div className="h-[1px] w-[420px] bg-border"></div>
         </motion.div>
-        <motion.div
-          variants={itemVariants}
-          className="relative grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-4"
-        >
-          <div className="col-span-1 sm:col-span-7 relative">
-            <div className="relative aspect-video w-full">
-              <div className="absolute inset-0 bg-muted/80 z-10"></div>
-              <Image
-                src="/placeholder.svg"
-                alt="3R Shane IMS Preview"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
 
-          <div className="col-span-1 sm:col-span-5 flex flex-col items-start sm:items-end gap-4">
-            <motion.p
-              variants={itemVariants}
-              className="text-customColors-bloodRed text-sm sm:text-md font-mono"
-            >
-              Featured Project
-            </motion.p>
-            <motion.h3
-              variants={itemVariants}
-              className="text-2xl sm:text-4xl font-semibold"
-            >
-              3R Shane IMS
-            </motion.h3>
-            <motion.div
-              variants={itemVariants}
-              className="bg-muted/40 p-4 sm:p-6 text-left sm:text-right"
-            >
-              <p className="text-sm lg:text-lg text-muted-foreground">
-                An inventory management system with point-of-sale, and purchase
-                order (procurement of goods) for rice mill businesses.
-              </p>
-            </motion.div>
-            <motion.div
-              variants={itemVariants}
-              className="flex gap-4 justify-end w-full"
-            >
-              <Link
-                href="#"
-                className="text-muted-foreground hover:text-customColors-bloodRed transition-colors"
-                aria-label="View source code on GitHub"
-              >
-                <Github className="w-5 h-5" />
-              </Link>
-              <Link
-                href="#"
-                className="text-muted-foreground hover:text-customColors-bloodRed transition-colors"
-                aria-label="Visit live site"
-              >
-                <ExternalLink className="w-5 h-5" />
-              </Link>
-            </motion.div>
-          </div>
-        </motion.div>
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={project.id}
+            project={project}
+            index={index}
+            reverse={index % 2 !== 0}
+          />
+        ))}
       </motion.div>
     </section>
   );

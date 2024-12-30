@@ -50,13 +50,13 @@ export default function Section3() {
         </motion.p>
         <motion.h2
           variants={itemVariants}
-          className="text-4xl sm:text-8xl font-bold mb-4 sm:mb-6"
+          className="text-4xl text-customColors-darkGray sm:text-8xl font-bold mb-4 sm:mb-6"
         >
           Get In Touch
         </motion.h2>
         <motion.p
           variants={itemVariants}
-          className="text-muted-foreground text-sm sm:text-lg mb-8 sm:mb-12 max-w-lg sm:max-w-xl"
+          className="text-customColors-gray text-sm sm:text-lg mb-8 sm:mb-12 max-w-lg sm:max-w-xl"
         >
           I&apos;m currently open to new opportunities, and my inbox is always
           open. Whether you have a question or just want to say hello, feel free

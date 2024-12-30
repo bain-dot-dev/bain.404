@@ -18,16 +18,6 @@ const navItems = [
   { href: "#project", label: "Project", number: "02" },
   { href: "#contact", label: "Contact", number: "03" },
 ];
-
-const downloadResume = (): void => {
-  const resumeUrl: string = "/resume/Bain Cruz Resume.pdf";
-  const a: HTMLAnchorElement = document.createElement("a");
-  a.href = resumeUrl;
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-};
-
 export default function Header() {
   const { scrollDirection } = useScrollDirection();
 
@@ -37,14 +27,14 @@ export default function Header() {
         scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"
       }`}
     >
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-4">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0 }}
-          className="w-10 h-10 sm:w-14 sm:h-14 bg-muted rounded-full flex items-center justify-center"
+          className="w-10 h-10 text-3xl lg:w-12 lg:h-12 bg-customColors-bloodRed flex items-center justify-center clip-hexagon text-customColors-pastelWhite"
         >
-          Logo
+          <span className="mt-2">B</span>
         </motion.div>
       </div>
       <nav className="hidden sm:flex items-center gap-8">
@@ -73,14 +63,19 @@ export default function Header() {
         >
           <div className="relative inline-block">
             <div className="absolute rounded-md inset-0 bg-customColors-bloodRed transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1" />
-            <Button
-              variant="outline"
-              onClick={downloadResume}
-              className="relative group border-customColors-bloodRed text-customColors-bloodRed bg-customColors-pastelWhite hover:bg-customColors-pastelWhite hover:text-customColors-bloodRed
-            transition-all duration-300 transform hover:-translate-x-1 hover:-translate-y-1"
+            <Link
+              href={"/resume/Bain Cruz Resume.pdf"}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Resume
-            </Button>
+              <Button
+                variant="outline"
+                className="relative group border-customColors-bloodRed text-customColors-bloodRed bg-customColors-pastelWhite hover:bg-customColors-pastelWhite hover:text-customColors-bloodRed
+            transition-all duration-300 transform hover:-translate-x-1 hover:-translate-y-1"
+              >
+                Resume
+              </Button>
+            </Link>
           </div>
         </motion.div>
       </nav>
