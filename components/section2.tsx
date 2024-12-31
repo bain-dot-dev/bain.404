@@ -34,7 +34,7 @@ export default function Section2() {
     <section
       id="project"
       ref={sectionRef}
-      className="h-auto bg-customColors-pastelWhite flex items-center justify-center px-4 lg:px-12 py-12 lg:py-24 mb-32 lg:mb-56"
+      className="h-auto  flex items-center justify-center px-4 lg:px-12 py-12 lg:py-24 mb-32 lg:mb-56"
     >
       <motion.div
         className="w-full max-w-5xl space-y-12"
@@ -43,8 +43,8 @@ export default function Section2() {
         animate={isInView ? "visible" : "hidden"}
       >
         <motion.div variants={itemVariants} className="flex items-center gap-4">
-          <h2 className="text-2xl lg:text-4xl font-semibold">
-            <span className="text-lg lg:text-2xl text-customColors-bloodRed font-mono">
+          <h2 className="text-2xl lg:text-4xl font-semibold text-customColors-darkGray dark:text-customColors-pastelWhite">
+            <span className="text-lg lg:text-2xl text-customColors-bloodRed dark:text-customColors-brightTurquoise font-mono">
               02.
             </span>{" "}
             Project

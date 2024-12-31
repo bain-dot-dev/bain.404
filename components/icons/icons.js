@@ -1,7 +1,5 @@
 import React from "react";
 
-let bloodRed = "#B02023";
-
 export const XIcon = (props) => {
   return (
     <svg
@@ -11,7 +9,7 @@ export const XIcon = (props) => {
       height="32"
       viewBox="0 0 24 24"
       fill="none"
-      stroke={bloodRed}
+      stroke="currentColor"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -31,7 +29,7 @@ export const MenuIcon = (props) => {
       height="24"
       viewBox="0 0 24 24"
       fill="none"
-      stroke={bloodRed}
+      stroke="currentColor"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"

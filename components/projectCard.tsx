@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import { Github, ExternalLink } from 'lucide-react'
-import Link from "next/link"
-import Image from "next/image"
-import { motion } from "framer-motion"
-import { Project } from "@/types/project"
+import { Github, ExternalLink } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { Project } from "@/types/project";
 
 interface ProjectCardProps {
-  project: Project
-  index: number
-  reverse?: boolean
+  project: Project;
+  index: number;
+  reverse?: boolean;
 }
 
 export function ProjectCard({ project, reverse = false }: ProjectCardProps) {
@@ -20,7 +20,7 @@ export function ProjectCard({ project, reverse = false }: ProjectCardProps) {
       y: 0,
       transition: { duration: 0.5 },
     },
-  }
+  };
 
   return (
     <motion.div
@@ -29,51 +29,59 @@ export function ProjectCard({ project, reverse = false }: ProjectCardProps) {
         reverse ? "lg:direction-rtl" : ""
       }`}
     >
-      <div className={`col-span-1 sm:col-span-7 relative ${reverse ? "lg:col-start-6" : ""}`}>
+      <div
+        className={`col-span-1 sm:col-span-7 relative ${
+          reverse ? "lg:col-start-6" : ""
+        }`}
+      >
         <div className="relative aspect-video w-full">
           <div className="absolute inset-0 z-10"></div>
           <Image
             src={project.image}
             alt={`${project.title} Preview`}
             fill
-            className="object-fill"
+            className="object-fill w-auto h-auto"
           />
         </div>
       </div>
 
-      <div className={`col-span-1 sm:col-span-5 flex flex-col ${
-        reverse ? "lg:col-start-1 items-start" : "items-start sm:items-end"
-      } gap-4`}>
+      <div
+        className={`col-span-1 sm:col-span-5 flex flex-col ${
+          reverse ? "lg:col-start-1 items-start" : "items-start sm:items-end"
+        } gap-4`}
+      >
         <motion.p
           variants={itemVariants}
-          className="text-customColors-bloodRed text-sm sm:text-md font-mono"
+          className="text-customColors-bloodRed dark:text-customColors-brightTurquoise text-sm sm:text-md font-mono"
         >
           Featured Project
         </motion.p>
         <motion.h3
           variants={itemVariants}
-          className="text-2xl sm:text-4xl font-semibold"
+          className="text-2xl sm:text-4xl font-semibold text-customColors-darkGray dark:text-customColors-pastelWhite"
         >
           {project.title}
         </motion.h3>
         <motion.div
           variants={itemVariants}
-          className={`bg-muted/40 p-4 sm:p-6 ${
+          className={`bg-customColors-woodSmoke/10 dark:bg-customColors-pastelWhite/10 rounded-sm p-4 sm:p-6 ${
             reverse ? "text-left" : "text-left sm:text-right"
           }`}
         >
-          <p className="text-sm lg:text-lg text-muted-foreground">
+          <p className="text-sm lg:text-lg text-muted-foreground dark:text-customColors-pastelWhite/80">
             {project.description}
           </p>
         </motion.div>
         <motion.div
           variants={itemVariants}
-          className={`flex gap-4 ${reverse ? "justify-start" : "justify-end"} w-full`}
+          className={`flex gap-4 ${
+            reverse ? "justify-start" : "justify-end"
+          } w-full`}
         >
           {project.github && (
             <Link
               href={project.github}
-              className="text-muted-foreground hover:text-customColors-bloodRed transition-colors"
+              className="text-muted-foreground hover:text-customColors-bloodRed dark:hover:text-customColors-brightTurquoise transition-colors"
               aria-label="View source code on GitHub"
             >
               <Github className="w-5 h-5" />
@@ -82,7 +90,7 @@ export function ProjectCard({ project, reverse = false }: ProjectCardProps) {
           {project.liveUrl && (
             <Link
               href={project.liveUrl}
-              className="text-muted-foreground hover:text-customColors-bloodRed transition-colors"
+              className="text-muted-foreground hover:text-customColors-bloodRed dark:hover:text-customColors-brightTurquoise transition-colors"
               aria-label="Visit live site"
             >
               <ExternalLink className="w-5 h-5" />
@@ -91,6 +99,5 @@ export function ProjectCard({ project, reverse = false }: ProjectCardProps) {
         </motion.div>
       </div>
     </motion.div>
-  )
+  );
 }
-

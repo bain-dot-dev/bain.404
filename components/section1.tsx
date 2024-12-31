@@ -31,9 +31,9 @@ export default function Section1() {
 
   return (
     <section
-    id="about"
+      id="about"
       ref={sectionRef}
-      className="h-auto bg-customColors-pastelWhite flex flex-col items-center justify-center px-6 py-12 lg:px-12 lg:py-24 lg:mb-52"
+      className="h-auto flex flex-col items-center justify-center px-6 py-12 lg:px-12 lg:py-24 lg:mb-52"
     >
       <motion.div
         className="flex flex-col sm:flex-row items-start gap-8 lg:gap-12 w-full max-w-4xl"
@@ -46,8 +46,8 @@ export default function Section1() {
             variants={itemVariants}
             className="flex items-center gap-4"
           >
-            <h2 className="text-3xl lg:text-4xl font-semibold text-customColors-darkGray">
-              <span className="text-xl lg:text-2xl text-customColors-bloodRed font-mono">
+            <h2 className="text-3xl lg:text-4xl font-semibold text-customColors-darkGray dark:text-customColors-pastelWhite">
+              <span className="text-xl lg:text-2xl text-customColors-bloodRed dark:text-customColors-brightTurquoise font-mono">
                 01.
               </span>{" "}
               About me
@@ -57,7 +57,7 @@ export default function Section1() {
 
           <motion.div
             variants={itemVariants}
-            className="space-y-6 text-customColors-gray"
+            className="space-y-6 text-customColors-gray dark:text-customColors-pastelWhite/80"
           >
             <p className="text-lg sm:text-xl leading-relaxed">
               Hello! My name is Bain Hansly Cruz, and I enjoy solving problems
@@ -77,7 +77,7 @@ export default function Section1() {
 
           <motion.div
             variants={itemVariants}
-            className="space-y-2 text-lg sm:text-xl text-muted-foreground"
+            className="space-y-2 text-lg sm:text-xl text-customColors-gray dark:text-customColors-pastelWhite/80"
           >
             <p>
               Here are a few technologies I&apos;ve been working with recently:
@@ -91,7 +91,7 @@ export default function Section1() {
                 "Zod",
               ].map((tech) => (
                 <div key={tech} className="flex items-center gap-2">
-                  <span className="text-customColors-bloodRed text-sm lg:text-lg">
+                  <span className="text-customColors-bloodRed dark:text-customColors-brightTurquoise text-sm lg:text-lg">
                     ▶
                   </span>
                   <span className="text-sm lg:text-lg font-mono">{tech}</span>

@@ -6,7 +6,7 @@ import Section4 from "@/components/section3";
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-customColors-pastelWhite">
+    <div className="min-h-screen bg-customColors-pastelWhite dark:bg-customColors-woodSmoke">
       <Section1 />
       <Section2 />
       <Section3 />

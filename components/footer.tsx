@@ -7,7 +7,6 @@ import { Github, Linkedin } from "lucide-react";
 export default function Footer() {
   return (
     <div>
-      {/* Social Icons for Mobile */}
       <motion.div
         className="sm:hidden flex justify-center gap-6"
         initial={{ opacity: 0, y: 20 }}
@@ -27,9 +26,7 @@ export default function Footer() {
           <Linkedin className="w-6 h-6" />
         </Link>
       </motion.div>
-
-      {/* Footer Content */}
-      <footer className="flex flex-col items-center justify-center gap-2 px-4 sm:px-0 py-6 lg:py-8 text-center">
+      <footer className="flex flex-col items-center justify-center gap-2 px-4 sm:px-0 py-6 lg:py-8 text-center text-customColors-gray dark:text-customColors-pastelWhite/50">
         <p className="text-sm sm:text-base text-muted-foreground">
           Loosely designed in Figma and coded in Visual Studio Code by yours
           truly.

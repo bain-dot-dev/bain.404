@@ -15,7 +15,7 @@ export default function SocialsOnSide() {
   return (
     <div className="hidden lg:block">
       <motion.div
-        className="fixed left-12 bottom-0 flex flex-col gap-6 items-center after:content-[''] after:w-[1px] after:h-32 after:bg-border"
+        className="fixed left-12 bottom-0 flex flex-col gap-6 items-center after:content-[''] after:w-[1px] after:h-32 after:bg-muted-foreground"
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 1.7 }}
@@ -26,9 +26,9 @@ export default function SocialsOnSide() {
           rel="noopener noreferrer"
           className={`${
             recentlyClicked === "github"
-              ? "text-customColors-bloodRed"
+              ? "text-customColors-bloodRed dark:text-customColors-brightTurquoise"
               : "text-muted-foreground"
-          } hover:text-customColors-bloodRed transition-all duration-300 transform hover:-translate-y-1`}
+          } hover:text-customColors-bloodRed dark:hover:text-customColors-brightTurquoise transition-all duration-300 transform hover:-translate-y-1`}
           onClick={() => handleLinkClick("github")}
         >
           <Github className="w-5 h-5" />
@@ -39,9 +39,9 @@ export default function SocialsOnSide() {
           rel="noopener noreferrer"
           className={`${
             recentlyClicked === "linkedin"
-              ? "text-customColors-bloodRed"
+              ? "text-customColors-bloodRed dark:text-customColors-brightTurquoise"
               : "text-muted-foreground"
-          } hover:text-customColors-bloodRed transition-all duration-300 transform hover:-translate-y-1`}
+          } hover:text-customColors-bloodRed dark:hover:text-customColors-brightTurquoise transition-all duration-300 transform hover:-translate-y-1`}
           onClick={() => handleLinkClick("linkedin")}
         >
           <Linkedin className="w-5 h-5" />
@@ -57,14 +57,14 @@ export default function SocialsOnSide() {
           href="mailto:cruzbanhansly@gmail.com"
           className={`${
             recentlyClicked === "email"
-              ? "text-customColors-bloodRed"
+              ? "text-customColors-bloodRed dark:text-customColors-brightTurquoise"
               : "text-muted-foreground"
-          } text-sm font-mono hover:text-customColors-bloodRed vertical-text transition-all duration-300 transform hover:-translate-y-1`}
+          } text-sm font-mono hover:text-customColors-bloodRed dark:hover:text-customColors-brightTurquoise vertical-text transition-all duration-300 transform hover:-translate-y-1`}
           onClick={() => handleLinkClick("email")}
         >
           cruzbainhansly@gmail.com
         </Link>
-        <div className="w-[1px] h-32 bg-border"></div>
+        <div className="w-[1px] h-32 bg-muted-foreground"></div>
       </motion.div>
     </div>
   );
