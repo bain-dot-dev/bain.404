@@ -100,17 +100,22 @@ export default function Section1() {
             </div>
           </motion.div>
         </div>
-
         <motion.div
           variants={itemVariants}
-          className="relative w-64 h-64 sm:w-80 sm:h-80 sm:mt-20 self-center sm:self-start"
+          className="relative inline-block group self-center sm:self-auto"
         >
-          <Image
-            src="/bain/Cruz, Bain Hansly.png"
-            alt="Bain Hansly Cruz"
-            fill
-            className="object-cover rounded-lg"
-          />
+          <div className="relative w-64 h-64 sm:w-80 sm:h-80 sm:mt-20 rounded-lg">
+            <div className="relative w-full h-full z-10 transition-all duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1">
+              <Image
+                src="/bain/Cruz, Bain Hansly.png"
+                alt="Bain Hansly Cruz"
+                fill
+                className="rounded-lg transition-all duration-300 group-hover:filter-none group-hover:mix-blend-normal"
+              />
+            </div>
+            <div className="absolute inset-0 bg-customColors-navy mix-blend-screen rounded-lg"></div>
+            <div className="absolute top-3.5 left-3.5 w-full h-full border-2 z-0 border-customColors-bloodRed dark:border-customColors-brightTurquoise rounded-lg transition-all duration-300 group-hover:translate-x-2 group-hover:translate-y-2"></div>
+          </div>
         </motion.div>
       </motion.div>
     </section>

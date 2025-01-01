@@ -71,7 +71,9 @@ export default function Section3() {
                       transition-all duration-300 transform hover:-translate-x-1 hover:-translate-y-1"
               asChild
             >
-              <Link href="mailto:cruzbainhansly@gmail.com">Say Hello</Link>
+              <Link href="mailto:cruzbainhansly@gmail.com">
+                <span className="mt-1">Say Hello</span>
+              </Link>
             </Button>
           </div>
         </motion.div>

@@ -78,19 +78,20 @@ export default function Navbar() {
         >
           <div className="relative inline-block">
             <div className="absolute rounded-md inset-0 bg-customColors-bloodRed dark:bg-customColors-brightTurquoise transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1" />
-            <Link
-              href={"/resume/Bain Cruz Resume.pdf"}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button
-                variant="outline"
-                className="relative group border-customColors-bloodRed dark:border-customColors-brightTurquoise text-customColors-bloodRed dark:text-customColors-brightTurquoise bg-customColors-pastelWhite dark:bg-customColors-woodSmoke hover:bg-customColors-pastelWhite dark:hover:bg-customColors-woodSmoke hover:text-customColors-bloodRed dark:hover:text-customColors-brightTurquoise
+
+            <Button
+              variant="outline"
+              className="relative group border-customColors-bloodRed dark:border-customColors-brightTurquoise text-customColors-bloodRed dark:text-customColors-brightTurquoise bg-customColors-pastelWhite dark:bg-customColors-woodSmoke hover:bg-customColors-pastelWhite dark:hover:bg-customColors-woodSmoke hover:text-customColors-bloodRed dark:hover:text-customColors-brightTurquoise
             transition-all duration-300 transform hover:-translate-x-1 hover:-translate-y-1"
+            >
+              <Link
+                href={"/resume/Bain Cruz Resume.pdf"}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Resume
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
         </motion.div>
       </nav>
@@ -130,19 +131,20 @@ export default function Navbar() {
               ))}
               <div className="relative inline-block text-lg mt-6 w-full">
                 <div className="absolute h-12 rounded-md inset-0 bg-customColors-bloodRed dark:bg-customColors-brightTurquoise transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1" />
-                <Link
-                  href={"/resume/Bain Cruz Resume.pdf"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button
-                    variant="outline"
-                    className="relative h-12 w-full group border-customColors-bloodRed dark:border-customColors-brightTurquoise text-customColors-bloodRed dark:text-customColors-brightTurquoise bg-customColors-pastelWhite dark:bg-customColors-woodSmoke hover:bg-customColors-pastelWhite dark:hover:bg-customColors-woodSmoke hover:text-customColors-bloodRed dark:hover:text-customColors-brightTurquoise
+
+                <Button
+                  variant="outline"
+                  className="relative h-12 w-full group border-customColors-bloodRed dark:border-customColors-brightTurquoise text-customColors-bloodRed dark:text-customColors-brightTurquoise bg-customColors-pastelWhite dark:bg-customColors-woodSmoke hover:bg-customColors-pastelWhite dark:hover:bg-customColors-woodSmoke hover:text-customColors-bloodRed dark:hover:text-customColors-brightTurquoise
             transition-all duration-300 transform hover:-translate-x-1 hover:-translate-y-1"
+                >
+                  <Link
+                    href={"/resume/Bain Cruz Resume.pdf"}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Resume
-                  </Button>
-                </Link>
+                  </Link>
+                </Button>
               </div>
             </div>
           </SheetContent>

@@ -149,6 +149,7 @@ html {
 .hexagon-wrapper::before {
   content: "";
   position: absolute;
+  margin-top: auto;
   top: -4px;
   left: -4px;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
@@ -168,4 +169,11 @@ html {
   .hexagon-wrapper::before {
     border: 20px solid hsl(var(--hexagon-border-color));
   }
+}
+
+.group:hover .relative.w-full.h-full {
+  transform: translate(-4px, -4px);
+}
+.group:hover .absolute.top-3 {
+  transform: translate(8px, 8px);
 }
