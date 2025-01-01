@@ -81,6 +81,8 @@ export function ProjectCard({ project, reverse = false }: ProjectCardProps) {
           {project.github && (
             <Link
               href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-muted-foreground hover:text-customColors-bloodRed dark:hover:text-customColors-brightTurquoise transition-colors"
               aria-label="View source code on GitHub"
             >
@@ -90,6 +92,8 @@ export function ProjectCard({ project, reverse = false }: ProjectCardProps) {
           {project.liveUrl && (
             <Link
               href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-muted-foreground hover:text-customColors-bloodRed dark:hover:text-customColors-brightTurquoise transition-colors"
               aria-label="Visit live site"
             >
