@@ -33,7 +33,7 @@ export default function Navbar() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0 }}
-          className="hexagon-wrapper dark:"
+          className="hexagon-wrapper dark: mt-2 lg:mt-0"
         >
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -41,7 +41,7 @@ export default function Navbar() {
             transition={{ duration: 0.4, delay: 0 }}
             className="w-8 h-8 text-2xl lg:w-10 lg:h-10  flex items-center justify-center hexagon "
           >
-            <span className="mt-2">B</span>
+            <span className="mt-0 lg:mt-2">B</span>
           </motion.div>
         </motion.div>
       </div>
@@ -97,11 +97,17 @@ export default function Navbar() {
       </nav>
       <div className="sm:hidden">
         <Sheet>
-          <SheetTrigger asChild>
-            <button className="bg-customColors-pastelWhite dark:bg-customColors-woodSmoke text-customColors-bloodRed dark:text-customColors-brightTurquoise hover:text-customColors-bloodRed dark:hover:text-customColors-brightTurquoise transition-colors">
-              <MenuIcon className="w-8 h-8" />
-            </button>
-          </SheetTrigger>
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0 }}
+          >
+            <SheetTrigger asChild>
+              <button className=" text-customColors-bloodRed dark:text-customColors-brightTurquoise">
+                <MenuIcon className="w-8 h-8" />
+              </button>
+            </SheetTrigger>
+          </motion.div>
           <SheetContent
             side="right"
             className="w-3/4 sm:w-1/2 flex flex-col items-center justify-center"
