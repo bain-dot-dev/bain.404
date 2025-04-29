@@ -31,4 +31,12 @@ export const projects: Project[] = [
     // github: "#",
     liveUrl: "https://travelog-xi.vercel.app/",
   },
+  {
+    id: "Schedlr",
+    title: "Schedlr",
+    description:
+      "A scheduling app that manages academic schedules for faculty and students while optimizing room utilization and preventing conflicts.",
+    image: "/projects/schedlr/schedlr.png",
+    featured: true,
+  },
 ];
