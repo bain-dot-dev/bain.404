@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Hero() {
   const one = (
     <motion.h1
-      className="text-lg sm:text-xl text-customColors-bloodRed dark:text-customColors-brightTurquoise mb-4 sm:mb-6 ml-1 font-mono"
+      className="text-lg sm:text-xl text-customColors-bloodRed dark:text-customColors-brightTurquoise mb-2 lg:mb-4 ml-1 font-mono tracking-wider"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut", delay: 1.2 }}
@@ -16,7 +16,7 @@ export default function Hero() {
 
   const two = (
     <motion.h1
-      className="text-5xl sm:text-8xl text-customColors-darkGray dark:text-customColors-pastelWhite font-bold mb-2"
+      className="text-5xl sm:text-8xl text-customColors-darkGray dark:text-customColors-pastelWhite font-bold mb-0 lg:mb-2 tracking-tight"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut", delay: 1.3 }}
@@ -27,7 +27,7 @@ export default function Hero() {
 
   const three = (
     <motion.h2
-      className="text-3xl sm:text-6xl text-customColors-gray dark:text-customColors-pastelWhite/50 font-bold mb-4 sm:mb-6"
+      className="text-3xl sm:text-6xl text-customColors-gray dark:text-customColors-pastelWhite/50 font-bold mb-2 lg:mb-4 tracking-tighter"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut", delay: 1.4 }}
@@ -38,15 +38,15 @@ export default function Hero() {
 
   const four = (
     <motion.p
-      className="text-base sm:text-2xl text-customColors-gray dark:text-customColors-pastelWhite/50 leading-relaxed w-full sm:w-5/6"
+      className="text-base sm:text-2xl text-customColors-gray dark:text-customColors-pastelWhite/50 leading-relaxed w-full sm:w-5/6 tracking-normal"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut", delay: 1.5 }}
     >
-      I am a skilled IT professional with a specialization in Database Systems
-      Technology and Web Development, combining my passion for software
-      engineering with a focus on delivering high-quality, efficient, and
-      scalable solutions.
+      Hey there! I&apos;m a full-stack developer with a year of experience
+      turning ideas into real, working web apps. I love building things that are
+      not just functional, but clean, efficient, and scalable whether it&apos;s
+      on the frontend or backend.
     </motion.p>
   );
 

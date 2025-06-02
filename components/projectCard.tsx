@@ -49,21 +49,21 @@ export function ProjectCard({ project, reverse = false }: ProjectCardProps) {
           <div className="col-span-1 lg:col-span-5 flex flex-col items-start sm:items-end gap-4">
             <motion.p
               variants={itemVariants}
-              className="text-customColors-bloodRed dark:text-customColors-brightTurquoise text-sm sm:text-md font-mono"
+              className="text-customColors-bloodRed dark:text-customColors-brightTurquoise text-sm lg:text-base font-mono tracking-widest"
             >
               Featured Project
             </motion.p>
             <motion.h3
               variants={itemVariants}
-              className="text-2xl sm:text-4xl font-semibold text-customColors-darkGray dark:text-customColors-pastelWhite"
+              className="text-2xl sm:text-4xl font-semibold text-customColors-darkGray dark:text-customColors-pastelWhite tracking-wide"
             >
               {project.title}
             </motion.h3>
             <motion.div
               variants={itemVariants}
-              className="bg-customColors-woodSmoke/10 dark:bg-customColors-pastelWhite/10 rounded-sm p-4 sm:p-6 text-left sm:text-right"
+              className="bg-customColors-woodSmoke/5 dark:bg-customColors-pastelWhite/10 rounded-sm p-4 sm:p-6 text-left sm:text-right"
             >
-              <p className="text-sm lg:text-lg text-muted-foreground dark:text-customColors-pastelWhite/80">
+              <p className="text-sm lg:text-lg text-muted-foreground dark:text-customColors-pastelWhite/80 tracking-tight">
                 {project.description}
               </p>
             </motion.div>
@@ -102,21 +102,21 @@ export function ProjectCard({ project, reverse = false }: ProjectCardProps) {
           <div className="col-span-1 lg:col-span-5 flex flex-col items-start gap-4">
             <motion.p
               variants={itemVariants}
-              className="text-customColors-bloodRed dark:text-customColors-brightTurquoise text-sm sm:text-md font-mono"
+              className="text-customColors-bloodRed dark:text-customColors-brightTurquoise text-sm lg:text-base font-mono tracking-widest"
             >
               Featured Project
             </motion.p>
             <motion.h3
               variants={itemVariants}
-              className="text-2xl sm:text-4xl font-semibold text-customColors-darkGray dark:text-customColors-pastelWhite"
+              className="text-2xl sm:text-4xl font-semibold text-customColors-darkGray dark:text-customColors-pastelWhite tracking-wide"
             >
               {project.title}
             </motion.h3>
             <motion.div
               variants={itemVariants}
-              className="bg-customColors-woodSmoke/10 dark:bg-customColors-pastelWhite/10 rounded-sm p-4 sm:p-6 text-left"
+              className="bg-customColors-woodSmoke/5 dark:bg-customColors-pastelWhite/10 rounded-sm p-4 sm:p-6 text-left"
             >
-              <p className="text-sm lg:text-lg text-muted-foreground dark:text-customColors-pastelWhite/80">
+              <p className="text-sm lg:text-lg text-muted-foreground dark:text-customColors-pastelWhite/80 tracking-tight">
                 {project.description}
               </p>
             </motion.div>

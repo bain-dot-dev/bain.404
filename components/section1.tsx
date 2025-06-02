@@ -59,7 +59,7 @@ export default function Section1() {
             variants={itemVariants}
             className="space-y-6 text-customColors-gray dark:text-customColors-pastelWhite/80"
           >
-            <p className="text-lg sm:text-xl leading-relaxed">
+            <p className="text-lg sm:text-xl leading-relaxed tracking-wide">
               Hello! My name is Bain Hansly Cruz, and I enjoy solving problems
               and turning ideas into solutions. My interest in freelancing
               started in 2023 when I was reached out to develop a web-based
@@ -67,7 +67,7 @@ export default function Section1() {
               only honed my technical skills but also fueled my passion for
               creating software that meets real-world needs.
             </p>
-            <p className="text-lg sm:text-xl leading-relaxed">
+            <p className="text-lg sm:text-xl leading-relaxed tracking-wide">
               My main focus these days is building accessible, inclusive
               products and digital experiences for a variety of clients. I
               believe in the power of technology to bridge gaps, simplify
@@ -77,7 +77,7 @@ export default function Section1() {
 
           <motion.div
             variants={itemVariants}
-            className="space-y-2 text-lg sm:text-xl text-customColors-gray dark:text-customColors-pastelWhite/80"
+            className="space-y-2 text-lg sm:text-xl text-customColors-gray dark:text-customColors-pastelWhite/80 tracking-wide"
           >
             <p>
               Here are a few technologies I&apos;ve been working with recently:
