@@ -55,7 +55,7 @@ export const projects: Project[] = [
     id: "Tic-Tac-Toe",
     title: "Tic Tac Toe",
     description:
-      "Tic Tac Toe is a classic game that allows users to play against each other or an AI opponent.",
+      "Tic Tac Toe is a classic game that allows users to play against each other on a virtual board, featuring a simple and intuitive interface.",
     image: "/projects/tic-tac-toe/tic-tac-toe.png",
     featured: true,
     github: "https://github.com/bain-dot-dev/tic-tac-toe-game",
