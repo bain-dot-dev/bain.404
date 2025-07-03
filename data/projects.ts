@@ -2,6 +2,16 @@ import { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
+    id: "Beins",
+    title: "Beins",
+    description:
+      "Beins is a galore of filipino streetwear, offering a wide range of trendy and stylish clothing and accessories for the modern Filipino youth.",
+    image: "/projects/beins/beins.png",
+    featured: true,
+    github: "https://github.com/bain-dot-dev/reimagined-pancake.io",
+    liveUrl: "https://bain-dot-dev.github.io/reimagined-pancake.io/",
+  },
+  {
     id: "Enchante",
     title: "Enchante",
     description:
