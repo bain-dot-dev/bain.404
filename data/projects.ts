@@ -82,4 +82,14 @@ export const projects: Project[] = [
     github: "https://github.com/bain-dot-dev/facebook-wall-concept-2008",
     liveUrl: "https://facebook-wall-concept-2008.vercel.app/",
   },
+  {
+    id: "Marketplace Demo",
+    title: "Marketplace Demo",
+    description:
+      "A demo showcasing a marketplace application with various features and functionalities.",
+    image: "/projects/marketplace-demo/marketplace-demo.png",
+    featured: true,
+    github: "https://github.com/bain-dot-dev/marketplace-demo",
+    liveUrl: "https://marketplace-demo-seven.vercel.app/",
+  }
 ];
