@@ -29,6 +29,20 @@ export default function Section1() {
     },
   };
 
+  const technologies = [
+    "React",
+    "Next.js",
+    "Node.js",
+    "Flask",
+    "TypeScript",
+    "Tailwind CSS",
+    "PostgreSQL",
+    "MySQL",
+    "Docker",
+    "Git",
+    "Figma",
+  ];
+
   return (
     <section
       id="about"
@@ -83,13 +97,7 @@ export default function Section1() {
               Here are a few technologies I&apos;ve been working with recently:
             </p>
             <div className="grid grid-cols-2 gap-2">
-              {[
-                "Next.js",
-                "TypeScript",
-                "Tailwind CSS",
-                "Prisma ORM",
-                "Zod",
-              ].map((tech) => (
+              {technologies.map((tech) => (
                 <div key={tech} className="flex items-center gap-2">
                   <span className="text-customColors-bloodRed dark:text-customColors-brightTurquoise text-sm lg:text-lg">
                     ▶
