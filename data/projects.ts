@@ -91,5 +91,15 @@ export const projects: Project[] = [
     featured: true,
     github: "https://github.com/bain-dot-dev/marketplace-demo",
     liveUrl: "https://marketplace-demo-seven.vercel.app/",
-  }
+  },
+  {
+    id: "Capmus",
+    title: "Capmus",
+    description:
+      'Capmus is a marketplace where users can buy, sell, and find services on your university campus" Capmus - University Marketplace and serves as a marketplace for resource-sharing within communities"',
+    image: "/projects/capmus/capmus.png",
+    featured: true,
+    // github: "#",
+    liveUrl: "https://capmus.com/",
+  },
 ];
