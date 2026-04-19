@@ -54,7 +54,7 @@ export default function Section1() {
     <section
       id="about"
       ref={sectionRef}
-      className="h-auto flex flex-col items-center justify-center px-6 py-12 lg:px-12 lg:py-24 lg:mb-52"
+      className="h-auto flex flex-col items-center justify-center px-4 sm:px-12 py-12 lg:py-24 mb-20 lg:mb-40"
     >
       <motion.div
         className="flex flex-col sm:flex-row items-start gap-8 lg:gap-12 w-full max-w-4xl"
@@ -137,7 +137,6 @@ export default function Section1() {
                 className="rounded-lg transition-all duration-300 group-hover:filter-none group-hover:mix-blend-normal"
               />
             </div>
-            <div className="absolute inset-0 bg-customColors-navy mix-blend-screen rounded-lg"></div>
             <div className="absolute top-3.5 left-3.5 w-full h-full border-2 z-0 border-customColors-bloodRed dark:border-customColors-brightTurquoise rounded-lg transition-all duration-300 group-hover:translate-x-2 group-hover:translate-y-2"></div>
           </div>
         </motion.div>

@@ -7,7 +7,7 @@ import { projects } from "@/data/projects";
 
 export default function Section2() {
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: true, amount: 0.1 });
+  const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
 
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -34,7 +34,7 @@ export default function Section2() {
     <section
       id="project"
       ref={sectionRef}
-      className="h-auto  flex items-center justify-center px-4 lg:px-12 py-12 lg:py-24 mb-32 lg:mb-56"
+      className="h-auto flex items-center justify-center px-4 sm:px-12 py-12 lg:py-24 mb-20 lg:mb-40"
     >
       <motion.div
         className="w-full max-w-5xl space-y-12"

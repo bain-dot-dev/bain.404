@@ -34,7 +34,7 @@ export default function Section3() {
     <section
       id="contact"
       ref={sectionRef}
-      className="h-auto  flex flex-col px-6 sm:px-12 py-12 sm:py-24 lg:mb-12 xl:mb-24 mb-40"
+      className="h-auto flex flex-col px-4 sm:px-12 py-12 sm:py-24 mb-20 lg:mb-40"
     >
       <motion.div
         className="flex-1 flex flex-col items-center justify-center max-w-xl sm:max-w-3xl mx-auto text-center"
@@ -63,12 +63,12 @@ export default function Section3() {
           to reach out, and I&apos;ll do my best to get back to you!
         </motion.p>
         <motion.div variants={itemVariants}>
-          <div className="relative inline-block">
+          <div className="relative inline-block group">
             <div className="absolute rounded-md inset-0 bg-customColors-bloodRed dark:bg-customColors-brightTurquoise transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1" />
             <Button
               variant="outline"
-              className="text-sm sm:text-md h-10 sm:h-12 px-6 sm:px-8 relative group border-customColors-bloodRed dark:border-customColors-brightTurquoise text-customColors-bloodRed dark:text-customColors-brightTurquoise bg-customColors-pastelWhite dark:bg-customColors-woodSmoke hover:bg-customColors-pastelWhite hover:text-customColors-bloodRed
-                      transition-all duration-300 transform hover:-translate-x-1 hover:-translate-y-1"
+              className="text-sm sm:text-md h-10 sm:h-12 px-6 sm:px-8 relative border-customColors-bloodRed dark:border-customColors-brightTurquoise text-customColors-bloodRed dark:text-customColors-brightTurquoise bg-customColors-pastelWhite dark:bg-customColors-woodSmoke hover:bg-customColors-pastelWhite hover:text-customColors-bloodRed
+                      transition-all duration-300 transform group-hover:-translate-x-1 group-hover:-translate-y-1"
               asChild
             >
               <Link href="mailto:cruzbainhansly@gmail.com">
