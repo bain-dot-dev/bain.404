@@ -54,7 +54,7 @@ export default function SocialsOnSide() {
         transition={{ duration: 0.5, delay: 1.7 }}
       >
         <Link
-          href="mailto:cruzbanhansly@gmail.com"
+          href="mailto:cruzbainhansly@gmail.com"
           className={`${
             recentlyClicked === "email"
               ? "text-customColors-bloodRed dark:text-customColors-brightTurquoise"
