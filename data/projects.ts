@@ -22,6 +22,16 @@ export const projects: Project[] = [
     liveUrl: "https://bain-dot-dev.github.io/enchante/",
   },
   {
+    id: "Capmus",
+    title: "Capmus",
+    description:
+      'Capmus is a marketplace where users can buy, sell, and find services on your university campus" Capmus - University Marketplace and serves as a marketplace for resource-sharing within communities"',
+    image: "/projects/capmus/capmus.png",
+    featured: true,
+    // github: "#",
+    liveUrl: "https://capmus.com/",
+  },
+  {
     id: "3r-shane-ims",
     title: "3R Shane IMS",
     description:
@@ -61,45 +71,35 @@ export const projects: Project[] = [
     github: "https://github.com/bain-dot-dev/ascendens-assessment",
     // liveUrl: "#",
   },
-  {
-    id: "Tic-Tac-Toe",
-    title: "Tic Tac Toe",
-    description:
-      "Tic Tac Toe is a classic game that allows users to play against each other on a virtual board, featuring a simple and intuitive interface.",
-    image: "/projects/tic-tac-toe/tic-tac-toe.png",
-    featured: true,
-    github: "https://github.com/bain-dot-dev/tic-tac-toe-game",
-    liveUrl: "https://tic-tac-toe-game-beta-bay.vercel.app/",
-  },
-  {
-    id: "Facebook Wall Concept 2008",
-    title: "Facebook Wall Concept 2008",
-    description:
-      "A conceptual design for the Facebook wall feature, showcasing user interactions and post displays.",
-    image:
-      "/projects/facebook-wall-concept-2008/facebook-wall-concept-2008.png",
-    featured: true,
-    github: "https://github.com/bain-dot-dev/facebook-wall-concept-2008",
-    liveUrl: "https://facebook-wall-concept-2008.vercel.app/",
-  },
-  {
-    id: "Marketplace Demo",
-    title: "Marketplace Demo",
-    description:
-      "A demo showcasing a marketplace application with various features and functionalities.",
-    image: "/projects/marketplace-demo/marketplace-demo.png",
-    featured: true,
-    github: "https://github.com/bain-dot-dev/marketplace-demo",
-    liveUrl: "https://marketplace-demo-seven.vercel.app/",
-  },
-  {
-    id: "Capmus",
-    title: "Capmus",
-    description:
-      'Capmus is a marketplace where users can buy, sell, and find services on your university campus" Capmus - University Marketplace and serves as a marketplace for resource-sharing within communities"',
-    image: "/projects/capmus/capmus.png",
-    featured: true,
-    // github: "#",
-    liveUrl: "https://capmus.com/",
-  },
+  // {
+  //   id: "Tic-Tac-Toe",
+  //   title: "Tic Tac Toe",
+  //   description:
+  //     "Tic Tac Toe is a classic game that allows users to play against each other on a virtual board, featuring a simple and intuitive interface.",
+  //   image: "/projects/tic-tac-toe/tic-tac-toe.png",
+  //   featured: true,
+  //   github: "https://github.com/bain-dot-dev/tic-tac-toe-game",
+  //   liveUrl: "https://tic-tac-toe-game-beta-bay.vercel.app/",
+  // },
+  // {
+  //   id: "Facebook Wall Concept 2008",
+  //   title: "Facebook Wall Concept 2008",
+  //   description:
+  //     "A conceptual design for the Facebook wall feature, showcasing user interactions and post displays.",
+  //   image:
+  //     "/projects/facebook-wall-concept-2008/facebook-wall-concept-2008.png",
+  //   featured: true,
+  //   github: "https://github.com/bain-dot-dev/facebook-wall-concept-2008",
+  //   liveUrl: "https://facebook-wall-concept-2008.vercel.app/",
+  // },
+  // {
+  //   id: "Marketplace Demo",
+  //   title: "Marketplace Demo",
+  //   description:
+  //     "A demo showcasing a marketplace application with various features and functionalities.",
+  //   image: "/projects/marketplace-demo/marketplace-demo.png",
+  //   featured: true,
+  //   github: "https://github.com/bain-dot-dev/marketplace-demo",
+  //   liveUrl: "https://marketplace-demo-seven.vercel.app/",
+  // },
 ];
