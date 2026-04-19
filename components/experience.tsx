@@ -7,7 +7,7 @@ import { experiences } from "@/data/experiences";
 export default function Experience() {
   const [activeTab, setActiveTab] = useState(0);
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: true, amount: 0.1 });
+  const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
 
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -36,7 +36,7 @@ export default function Experience() {
     <section
       id="experience"
       ref={sectionRef}
-      className="h-auto flex flex-col items-center justify-center px-6 py-12 lg:px-12 lg:py-24 lg:mb-52"
+      className="h-auto flex flex-col items-center justify-center px-4 sm:px-12 py-12 lg:py-24 mb-20 lg:mb-40"
     >
       <motion.div
         className="w-full max-w-4xl space-y-8"

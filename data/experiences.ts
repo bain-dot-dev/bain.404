@@ -8,7 +8,7 @@ export const experiences: Experience[] = [
     roles: [
       {
         title: "Full-Stack Developer",
-        startDate: "July 2025",
+        startDate: "July 2024",
         endDate: "Present",
         descriptions: [
           "Spearheaded MVP development and launch of Capmus university marketplace, leading a cross-functional team to deliver core functionality within 8 weeks.",
