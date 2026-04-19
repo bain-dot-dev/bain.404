@@ -30,22 +30,17 @@ export default function Navbar() {
       }`}
     >
       <div className="absolute inset-0 bg-gradient-to-b from-customColors-pastelWhite/80 via-customColors-pastelWhite/60 to-transparent dark:from-customColors-woodSmoke/80 dark:via-customColors-woodSmoke/60 dark:to-transparent backdrop-blur-sm pointer-events-none" />
-      <div className="relative flex items-center justify-between px-6 sm:px-12 pt-4 sm:pt-6 pb-4">
+      <div className="relative flex items-center justify-between px-4 sm:px-12 pt-4 sm:pt-6 pb-4">
       <div className="flex items-center">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0 }}
-          className="hexagon-wrapper dark: mt-2 lg:mt-0"
+          className="hexagon-wrapper"
         >
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0 }}
-            className="w-8 h-8 text-2xl lg:w-10 lg:h-10  flex items-center justify-center hexagon "
-          >
-            <span className="mt-0 lg:mt-2">B</span>
-          </motion.div>
+          <div className="hexagon text-base lg:text-lg font-semibold font-mono">
+            B
+          </div>
         </motion.div>
       </div>
       <nav className="hidden sm:flex items-center gap-4 lg:gap-8">
@@ -79,13 +74,13 @@ export default function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.7 }}
         >
-          <div className="relative inline-block">
+          <div className="relative inline-block group">
             <div className="absolute rounded-md inset-0 bg-customColors-bloodRed dark:bg-customColors-brightTurquoise transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1" />
 
             <Button
               variant="outline"
-              className="relative group border-customColors-bloodRed dark:border-customColors-brightTurquoise text-customColors-bloodRed dark:text-customColors-brightTurquoise bg-customColors-pastelWhite dark:bg-customColors-woodSmoke hover:bg-customColors-pastelWhite dark:hover:bg-customColors-woodSmoke hover:text-customColors-bloodRed dark:hover:text-customColors-brightTurquoise
-            transition-all duration-300 transform hover:-translate-x-1 hover:-translate-y-1"
+              className="relative border-customColors-bloodRed dark:border-customColors-brightTurquoise text-customColors-bloodRed dark:text-customColors-brightTurquoise bg-customColors-pastelWhite dark:bg-customColors-woodSmoke hover:bg-customColors-pastelWhite dark:hover:bg-customColors-woodSmoke hover:text-customColors-bloodRed dark:hover:text-customColors-brightTurquoise
+            transition-all duration-300 transform group-hover:-translate-x-1 group-hover:-translate-y-1"
             >
               <Link
                 href={"/resume/Bain Cruz Resume.pdf"}
@@ -138,13 +133,13 @@ export default function Navbar() {
                   </Link>
                 </div>
               ))}
-              <div className="relative inline-block text-lg mt-6 w-full">
+              <div className="relative inline-block text-lg mt-6 w-full group">
                 <div className="absolute h-12 rounded-md inset-0 bg-customColors-bloodRed dark:bg-customColors-brightTurquoise transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1" />
 
                 <Button
                   variant="outline"
-                  className="relative h-12 w-full group border-customColors-bloodRed dark:border-customColors-brightTurquoise text-customColors-bloodRed dark:text-customColors-brightTurquoise bg-customColors-pastelWhite dark:bg-customColors-woodSmoke hover:bg-customColors-pastelWhite dark:hover:bg-customColors-woodSmoke hover:text-customColors-bloodRed dark:hover:text-customColors-brightTurquoise
-            transition-all duration-300 transform hover:-translate-x-1 hover:-translate-y-1"
+                  className="relative h-12 w-full border-customColors-bloodRed dark:border-customColors-brightTurquoise text-customColors-bloodRed dark:text-customColors-brightTurquoise bg-customColors-pastelWhite dark:bg-customColors-woodSmoke hover:bg-customColors-pastelWhite dark:hover:bg-customColors-woodSmoke hover:text-customColors-bloodRed dark:hover:text-customColors-brightTurquoise
+            transition-all duration-300 transform group-hover:-translate-x-1 group-hover:-translate-y-1"
                 >
                   <Link
                     href={"/resume/Bain Cruz Resume.pdf"}

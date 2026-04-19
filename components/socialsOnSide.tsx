@@ -18,7 +18,7 @@ export default function SocialsOnSide() {
         className="fixed left-12 bottom-0 flex flex-col gap-6 items-center after:content-[''] after:w-[1px] after:h-32 after:bg-muted-foreground"
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.5, delay: 1.7 }}
+        transition={{ duration: 0.5, delay: 0.8 }}
       >
         <Link
           href="https://github.com/bain-dot-dev"
@@ -51,7 +51,7 @@ export default function SocialsOnSide() {
         className="fixed right-12 bottom-0 flex flex-col items-center gap-6"
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.5, delay: 1.7 }}
+        transition={{ duration: 0.5, delay: 0.8 }}
       >
         <Link
           href="mailto:cruzbainhansly@gmail.com"
