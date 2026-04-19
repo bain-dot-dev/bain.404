@@ -67,6 +67,20 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      keyframes: {
+        blink: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0" },
+        },
+        gradient: {
+          "0%": { backgroundPosition: "100% center" },
+          "100%": { backgroundPosition: "0% center" },
+        },
+      },
+      animation: {
+        blink: "blink 1s step-end infinite",
+        gradient: "gradient 6s ease-in-out infinite alternate",
+      },
     },
     screens: {
       sm: "640px", // Small devices

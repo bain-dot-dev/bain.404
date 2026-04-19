@@ -16,7 +16,7 @@ export default function Hero() {
 
   const two = (
     <motion.h1
-      className="text-5xl sm:text-8xl text-customColors-darkGray dark:text-customColors-pastelWhite font-bold mb-0 lg:mb-2 tracking-tight"
+      className="text-5xl sm:text-8xl font-bold mb-0 lg:mb-2 tracking-tight bg-[linear-gradient(90deg,var(--g)_0%,var(--g)_35%,var(--h)_50%,var(--g)_65%,var(--g)_100%)] bg-clip-text text-transparent bg-[length:300%_auto] animate-gradient [--g:#393738] [--h:#a71814] dark:[--g:#FFF] dark:[--h:#00FFD1]"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut", delay: 1.3 }}
@@ -32,7 +32,8 @@ export default function Hero() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut", delay: 1.4 }}
     >
-      I engineer seamless web experiences.
+      I engineer seamless web experiences
+      <span className="inline-block w-[3px] h-[0.8em] ml-1 bg-customColors-bloodRed dark:bg-customColors-brightTurquoise animate-blink align-middle" />
     </motion.h2>
   );
 
@@ -43,7 +44,7 @@ export default function Hero() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut", delay: 1.5 }}
     >
-      Hey there! I&apos;m a full-stack developer with a year of experience
+      Hey there! I&apos;m a full-stack developer with years of experience
       turning ideas into real, working web apps. I love building things that are
       not just functional, but clean, efficient, and scalable whether it&apos;s
       on the frontend or backend.
@@ -55,7 +56,7 @@ export default function Hero() {
   return (
     <section className="min-h-screen  flex flex-col items-center justify-center px-4 sm:px-8">
       <motion.main
-        className="flex-1 flex flex-col items-start justify-center text-left w-full px-4 sm:px-12 lg:px-28 lg:w-1/2 lg:mt-12 sm:-mt-48"
+        className="flex-1 flex flex-col items-start justify-center text-left w-full px-4 sm:px-12 lg:px-28 lg:w-3/4 xl:w-2/3 lg:mt-12 sm:-mt-48"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
