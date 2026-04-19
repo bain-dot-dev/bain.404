@@ -71,6 +71,16 @@ export const projects: Project[] = [
     github: "https://github.com/bain-dot-dev/ascendens-assessment",
     // liveUrl: "#",
   },
+  {
+    id: "Marci Metzger Homes",
+    title: "Marci Metzger Homes",
+    description:
+      "A real estate website for showcasing properties and providing information about the company.",
+    image: "/projects/marci-metzger-homes/marci-metzger-homes.png",
+    featured: true,
+    github: "",
+    liveUrl: "https://marci-metzger-homes-rho.vercel.app/",
+  },
   // {
   //   id: "Tic-Tac-Toe",
   //   title: "Tic Tac Toe",
