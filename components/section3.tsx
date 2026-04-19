@@ -46,7 +46,7 @@ export default function Section3() {
           variants={itemVariants}
           className="text-customColors-bloodRed dark:text-customColors-brightTurquoise text-xl sm:text-3xl mb-2 sm:mb-4 font-mono"
         >
-          03. What&apos;s Next?
+          04. What&apos;s Next?
         </motion.p>
         <motion.h2
           variants={itemVariants}

@@ -16,18 +16,21 @@ import ThemeToggle from "@/components/ThemeToggle";
 
 const navItems = [
   { href: "#about", label: "About", number: "01" },
-  { href: "#project", label: "Project", number: "02" },
-  { href: "#contact", label: "Contact", number: "03" },
+  { href: "#experience", label: "Experience", number: "02" },
+  { href: "#project", label: "Project", number: "03" },
+  { href: "#contact", label: "Contact", number: "04" },
 ];
 export default function Navbar() {
   const { scrollDirection } = useScrollDirection();
 
   return (
     <motion.nav
-      className={`fixed top-0 left-0 right-0 flex items-center justify-between px-6 sm:px-12 pt-4 sm:pt-6 backdrop-blur-sm z-50 transition-all duration-300  ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"
       }`}
     >
+      <div className="absolute inset-0 bg-gradient-to-b from-customColors-pastelWhite/80 via-customColors-pastelWhite/60 to-transparent dark:from-customColors-woodSmoke/80 dark:via-customColors-woodSmoke/60 dark:to-transparent backdrop-blur-sm pointer-events-none" />
+      <div className="relative flex items-center justify-between px-6 sm:px-12 pt-4 sm:pt-6 pb-4">
       <div className="flex items-center">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -45,7 +48,7 @@ export default function Navbar() {
           </motion.div>
         </motion.div>
       </div>
-      <nav className="hidden sm:flex items-center gap-8">
+      <nav className="hidden sm:flex items-center gap-4 lg:gap-8">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -155,6 +158,7 @@ export default function Navbar() {
             </div>
           </SheetContent>
         </Sheet>
+      </div>
       </div>
     </motion.nav>
   );

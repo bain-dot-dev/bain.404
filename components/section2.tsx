@@ -7,7 +7,7 @@ import { projects } from "@/data/projects";
 
 export default function Section2() {
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
+  const isInView = useInView(sectionRef, { once: true, amount: 0.1 });
 
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -45,11 +45,11 @@ export default function Section2() {
         <motion.div variants={itemVariants} className="flex items-center gap-4">
           <h2 className="text-2xl lg:text-4xl font-semibold text-customColors-darkGray dark:text-customColors-pastelWhite">
             <span className="text-lg lg:text-2xl text-customColors-bloodRed dark:text-customColors-brightTurquoise font-mono">
-              02.
+              03.
             </span>{" "}
             Project
           </h2>
-          <div className="h-[1px] w-[420px] bg-border"></div>
+          <div className="h-[1px] flex-1 bg-border"></div>
         </motion.div>
 
         {projects.map((project, index) => (
