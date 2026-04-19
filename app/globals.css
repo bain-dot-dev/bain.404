@@ -100,6 +100,16 @@ body {
   transform: rotate(360deg);
 }
 
+::selection {
+  background-color: rgba(167, 24, 20, 0.2);
+  color: #a71814;
+}
+
+.dark ::selection {
+  background-color: rgba(0, 255, 209, 0.15);
+  color: #00FFD1;
+}
+
 html {
   scroll-behavior: smooth;
 }
