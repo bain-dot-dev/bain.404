@@ -32,15 +32,22 @@ export default function Section1() {
   const technologies = [
     "React",
     "Next.js",
+    "TypeScript",
+    "JavaScript",
+    "Tailwind CSS",
     "Node.js",
     "Flask",
-    "TypeScript",
-    "Tailwind CSS",
+    "Laravel",
+    "Flutter",
     "PostgreSQL",
     "MySQL",
+    "Prisma",
+    "Supabase",
     "Docker",
+    "Python",
     "Git",
     "Figma",
+    "Framer Motion",
   ];
 
   return (
@@ -91,19 +98,28 @@ export default function Section1() {
 
           <motion.div
             variants={itemVariants}
-            className="space-y-2 text-lg sm:text-xl text-customColors-gray dark:text-customColors-pastelWhite/80 tracking-wide"
+            className="space-y-3 text-customColors-gray dark:text-customColors-pastelWhite/80"
           >
-            <p>
+            <p className="text-lg sm:text-xl tracking-wide">
               Here are a few technologies I&apos;ve been working with recently:
             </p>
-            <div className="grid grid-cols-2 gap-2">
-              {technologies.map((tech) => (
-                <div key={tech} className="flex items-center gap-2">
-                  <span className="text-customColors-bloodRed dark:text-customColors-brightTurquoise text-sm lg:text-lg">
-                    ▶
-                  </span>
-                  <span className="text-sm lg:text-lg font-mono">{tech}</span>
-                </div>
+            <div className="flex flex-wrap gap-2">
+              {technologies.map((tech, index) => (
+                <motion.span
+                  key={tech}
+                  variants={{
+                    hidden: { opacity: 0, scale: 0.8 },
+                    visible: {
+                      opacity: 1,
+                      scale: 1,
+                      transition: { duration: 0.3, delay: index * 0.05 },
+                    },
+                  }}
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  className="px-3 py-1 text-sm font-mono rounded-full border border-customColors-bloodRed/40 dark:border-customColors-brightTurquoise/40 text-customColors-bloodRed dark:text-customColors-brightTurquoise hover:bg-customColors-bloodRed/10 dark:hover:bg-customColors-brightTurquoise/10 hover:border-customColors-bloodRed dark:hover:border-customColors-brightTurquoise transition-colors duration-200 cursor-default"
+                >
+                  {tech}
+                </motion.span>
               ))}
             </div>
           </motion.div>
