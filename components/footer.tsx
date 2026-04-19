@@ -11,7 +11,7 @@ export default function Footer() {
         className="sm:hidden flex justify-center gap-6"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 1.6 }}
+        transition={{ duration: 0.5, delay: 0.8 }}
       >
         <Link
           href="https://github.com/bain-dot-dev"
