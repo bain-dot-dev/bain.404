@@ -2,21 +2,34 @@ import { Experience } from "@/types/experience";
 
 export const experiences: Experience[] = [
   {
-    id: "capmus",
-    company: "Capmus",
-    url: "https://capmus.com/",
+    id: "supost",
+    company: "SUpost",
+    urls: [
+      { label: "Capmus", href: "https://capmus.com/" },
+      { label: "SUpost", href: "https://supost.com/" },
+    ],
     roles: [
       {
         title: "Full-Stack Developer",
         startDate: "July 2024",
         endDate: "Present",
         descriptions: [
-          "Spearheaded MVP development and launch of Capmus university marketplace, leading a cross-functional team to deliver core functionality within 8 weeks.",
-          "Built scalable architecture with React 19, Next.js 15, TypeScript, Tailwind CSS, and Supabase/PostgreSQL for cross-platform parity on iOS/Android and web.",
-          "Engineered .edu email verification, token-based authentication, and real-time messaging with Supabase real-time subscriptions and WebSockets.",
-          "Implemented advanced geolocation mapping with proximity search and filtering using PostgreSQL, enabling optimized matching across housing, items, services, and jobs.",
-          "Architected normalized relational database schema ensuring high query efficiency, real-time data sync, and data integrity for marketplace operations.",
-          "Led SEO and growth initiatives, built analytics dashboards using Vercel Analytics and Google Analytics, and automated data migration pipelines with Python, SQL, and GitHub Actions.",
+          "Built and deployed multiple full-stack marketplace platforms (Next.js, React, TypeScript, Supabase/PostgreSQL) enabling real-time buying, selling, messaging, and payments across university users.",
+          "Architected relational and multi-schema PostgreSQL databases (schemas, RLS, RPCs, indexing) to support secure, scalable operations across different marketplace systems.",
+          "Designed and implemented API ecosystem supporting authentication, marketplace operations, messaging, payments, and integrations.",
+          "Engineered scalable web architecture (SSR, modular components) to deliver high-performance, production-ready applications.",
+          "Developed real-time messaging systems (WebSockets, Supabase Realtime) supporting direct/group chats, read receipts, typing indicators, reactions, and file attachments.",
+          "Built search and filtering systems (PostgreSQL Full-Text Search + pagination + caching) improving product discovery and user engagement.",
+          "Developed multi-step, type-safe form workflows (Zod, React Hook Form) reducing input errors and improving conversion during listing creation.",
+          "Implemented ETL pipelines (Python, SQL, GitHub Actions) and automated data workflows to support data migration, ingestion, and system interoperability.",
+          "Integrated third-party APIs and external data sources, enabling seamless data exchange and automation across systems.",
+          "Integrated Stripe subscription workflows (checkout, billing, webhooks) and AWS S3 file uploads for secure payments and scalable media handling.",
+          "Implemented advanced state management (Zustand, TanStack Query) with caching, optimistic updates, and stale-while-revalidate strategies to reduce API load and improve UX.",
+          "Implemented authentication and authorization (JWT, .edu verification, Supabase Auth, RBAC, RLS) ensuring secure and role-based system access.",
+          "Built admin and moderation systems (audit logs, spam detection, user controls) improving platform safety and operational control.",
+          "Developed analytics and monitoring systems (Google Analytics, Vercel, Sentry) to track user behavior, performance, and system reliability.",
+          "Led SEO optimization and technical improvements, improving organic visibility and search performance.",
+          "Mentored developers and contributed to agile workflows (sprint planning, code reviews) to improve development velocity and code quality.",
         ],
       },
     ],
@@ -26,7 +39,7 @@ export const experiences: Experience[] = [
     company: "JLabs",
     roles: [
       {
-        title: "Jr. Software Engineer",
+        title: "Software Engineer",
         startDate: "Dec 2025",
         endDate: "March 2026",
         descriptions: [

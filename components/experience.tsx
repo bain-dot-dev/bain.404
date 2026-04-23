@@ -7,7 +7,7 @@ import { experiences } from "@/data/experiences";
 export default function Experience() {
   const [activeTab, setActiveTab] = useState(0);
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
+  const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -93,7 +93,24 @@ export default function Experience() {
                   <div>
                     <h3 className="text-xl lg:text-2xl font-medium text-customColors-darkGray dark:text-customColors-pastelWhite">
                       {role.title}{" "}
-                      {activeExperience.url ? (
+                      {activeExperience.urls ? (
+                        <span className="text-customColors-bloodRed dark:text-customColors-brightTurquoise">
+                          @{" "}
+                          {activeExperience.urls.map((u, i) => (
+                            <span key={u.label}>
+                              <a
+                                href={u.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:underline"
+                              >
+                                {u.label}
+                              </a>
+                              {i < activeExperience.urls!.length - 1 && " / "}
+                            </span>
+                          ))}
+                        </span>
+                      ) : activeExperience.url ? (
                         <a
                           href={activeExperience.url}
                           target="_blank"

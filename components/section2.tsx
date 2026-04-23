@@ -7,7 +7,7 @@ import { projects } from "@/data/projects";
 
 export default function Section2() {
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
+  const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },

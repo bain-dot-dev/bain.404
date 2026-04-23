@@ -61,16 +61,16 @@ export const projects: Project[] = [
     // github: "#",
     // liveUrl: "#",
   },
-  {
-    id: "Task It Task Master",
-    title: "Task It Task Master",
-    description:
-      "Task It Task Master is a task management tool that helps users organize and prioritize their tasks effectively.",
-    image: "/projects/task-it-task-master/task-it-task-master.png",
-    featured: true,
-    github: "https://github.com/bain-dot-dev/ascendens-assessment",
-    // liveUrl: "#",
-  },
+  // {
+  //   id: "Task It Task Master",
+  //   title: "Task It Task Master",
+  //   description:
+  //     "Task It Task Master is a task management tool that helps users organize and prioritize their tasks effectively.",
+  //   image: "/projects/task-it-task-master/task-it-task-master.png",
+  //   featured: true,
+  //   github: "https://github.com/bain-dot-dev/ascendens-assessment",
+  //   // liveUrl: "#",
+  // },
   {
     id: "Marci Metzger Homes",
     title: "Marci Metzger Homes",
